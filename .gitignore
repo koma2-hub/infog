@@ -1,0 +1,8 @@
+*.ply
+*.pth
+*.npz
+*.png
+*.pt
+*.t7
+*log
+*.backup
