@@ -230,7 +230,7 @@ def main():
     parser.add_argument('--dropout', type=float, default=0.0)
     parser.add_argument('--batch_size', type=int, default=2)
     parser.add_argument('--test_batch_size', type=int, default=1)
-    parser.add_argument('--epochs', type=int, default=100)
+    parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--seed', type=int, default=1234)
     parser.add_argument('--eval', action='store_true', default=False)
