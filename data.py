@@ -216,7 +216,7 @@ def main():
         print("警告: すでにデータセットディレクトリが存在し、ファイルが含まれています。処理を続行しますか？ (y/n)")
         # インタラクティブな確認が必要な場合はここで処理。今回は自動続行。
 
-    make_dataset(sample_point=args.sample_point, k=4096, 
+    make_dataset(sample_point=args.sample_point, k=2048, 
                  data_path=args.data_path, output_dir=args.output_dir, 
                  overlap_ratio=(0.3, 0.5), intensity=True)
 

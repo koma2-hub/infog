@@ -208,3 +208,13 @@ def get_correspondence_matrix(pcd_a, pcd_b, threshold):
             corr_matrix[i, neighbors] = 1.0
             
     return corr_matrix
+
+def get_device():
+    if torch.xpu.is_available():
+        device = "xpu"
+    elif torch.cuda.is_available():
+        device = "cuda"
+    else:
+        device = "cpu"
+    
+    return device   
